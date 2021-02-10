@@ -3,6 +3,7 @@
 @section('title', '記事一覧')
 
 @section('content')
+  @include('nav')
   <div class="container">
   @foreach($articles as $article)
     <div class="card mt-3">
@@ -22,7 +23,7 @@
         {{ $article->title }}
         </h3>
         <div class="card-text">
-        {!! nl2br(e( $article->body )) !!} {{--この行を変更--}}
+        {!! nl2br(e( $article->body )) !!}
         </div>
       </div>
     </div>
