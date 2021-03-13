@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+    public function__construct()
+    {
+        $this->autnorizeResource(Article::class, 'article');
+    }
+    
     public function index()
     {
         $articles = Article::all()->sortByDesc('created_at');
