@@ -10,7 +10,7 @@ class ArticleController extends Controller
 {
     public function __construct()
     {
-        $this->autnorizeResource(Article::class, 'article');
+        $this->authorizeResource(Article::class, 'article');
     }
 
     public function index()
@@ -50,8 +50,8 @@ class ArticleController extends Controller
         return redirect()->route('articles.index');
     }
 
-    public function show(Article $Article)
+    public function show(Article $article)
     {
-        return view('aritcles.show', ['article' => $article]);
-    }
+        return view('articles.show', ['article' => $article]);
+    }   
 }
