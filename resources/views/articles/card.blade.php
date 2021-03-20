@@ -61,7 +61,7 @@
   </div>
   <div class="card-body pt-0 pb-2 pl-3">
     <div class="card-text">
-      <article-like :initials-is-by='@json($aritcle->isLikeBy(Auth::user()))'>
+      <article-like :initials-is-by='@json($article->isLikeBy(Auth::user()))'>
       </article-like>
     </div>
   </div>
