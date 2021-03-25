@@ -21,14 +21,15 @@
         type: Boolean,
         default: false,
       },
+      authorized: {
+        type: Boolean,
+        default: false,
+      },
+      endpoint: {
+        type: String,
+      },
     },
-    authorized: {
-      type: Boolean,
-      default: false,
-    },
-    endpoint: {
-      type: String,
-    },
+    
     data() {
       return {
          isFollowedBy: this.initialIsFollowedBy,
