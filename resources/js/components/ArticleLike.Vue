@@ -58,7 +58,7 @@
 
         this.isLikedBy = false
         this.countLikes = response.data.countLikes
-        this.gotToLike 
+        this.gotToLike = false
       },
     },
   }
