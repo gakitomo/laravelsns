@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark blue-gradient">
 
-  <a class="navbar-brand" href="/"><i class="far fa-sticky-note mr-1"></i>memo</a>
+  <a class="navbar-brand" href="/"><i class="fas fa-blog mr-3"></i>Live BBS</a>
 
   <ul class="navbar-nav ml-auto">
 
@@ -31,11 +31,11 @@
       <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
         <button class="dropdown-item" type="button"
           onclick="location.href='{{ route("users.show", ["name" => Auth::user()->name]) }}'">
-          マイページ
+          <i class="fas fa-user mr-2"></i>マイページ
         </button>
         <div class="dropdown-divider"></div>
         <button form="logout-button" class="dropdown-item" type="submit">
-          ログアウト
+        <i class="fas fa-sign-out-alt mr-2"></i>ログアウト
         </button>
       </div>
     </li>

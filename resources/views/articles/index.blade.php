@@ -1,6 +1,7 @@
 @extends('app')
+<link rel="favicon" href="{{ asset('/phpelephant.ico') }}">
 
-@section('title', '記事一覧')
+@section('title', 'gakitomo-LiveBBS')
 
 @section('content')
   @include('nav')
